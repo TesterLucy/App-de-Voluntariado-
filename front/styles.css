@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Asegúrate de usar una fuente legible */
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00292f; /* Fondo más oscuro */
+}
+
+.container, .welcome-container {
+    background-color: #074742; /* Fondo del contenedor en verde oscuro */
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px; /* Ancho fijo para los formularios */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+}
+
+h1, h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffba63; /* Color amarillo suave para los títulos */
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.button-group, .forgot-password {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Separación entre botones */
+    margin-top: 20px;
+}
+
+button {
+    background-color: #ffba63; /* Fondo amarillo suave */
+    color: black;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 0;
+    font-size: 18px; /* Tamaño del texto del botón */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e6a350; /* Color más oscuro al hacer hover */
+}
+
+.cancel-button {
+    background-color: #e74c3c; /* Botón cancelar en rojo */
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #c0392b; /* Botón cancelar con hover en un rojo más oscuro */
+}
+
+/* Para alinear los botones en la pantalla de bienvenida */
+.welcome-container {
+    text-align: center;
+}
+#p{
+    font-size: 18px;
+    color: #e4dfda; /* Color amarillo suave para los títulos */
+    font-weight: bold;
+    text-align: center;
+}
+button:focus {
+    outline: 2px solid #ffba63; /* Resalta el botón enfocado */
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"] {
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus {
+    border-color: #ffba63;
+}
+/* Asegúrate de que el mapa ocupe todo el espacio disponible */
+#map {
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    width: 100%; /* Opcional: un borde alrededor del mapa */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.voluntariado-container {
+    text-align: center;
+    background-color: #074742; /* Fondo verde oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+h1 {
+    color: #ffba63; /* Título en color amarillo */
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #e4dfda; /* Texto en color claro */
+}
+
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffba63; /* Cambia el color del botón al pasar el mouse */
+}
+
+/* Estilo de botones de voluntariado */
+button#normalVolunteerButton {
+    background-color: #ffba63; /* Naranja para el voluntariado normal */
+    color: black;
+}
+
+button#experienceVolunteerButton {
+    background-color: #ffba63; /* Verde para el voluntariado con experiencia laboral */
+    color: black;
+}
+
+button#normalVolunteerButton:hover,
+button#experienceVolunteerButton:hover {
+    opacity: 0.8; /* Añadir un efecto de opacidad al hacer hover */
+}
+/* Estilos para que el mapa ocupe toda la pantalla */
+#map {
+    height: 100vh;
+    width: 100%;
+}
+
+/* Estilos para la leyenda */
+.legend {
+    background-color: white; /* Fondo blanco para la leyenda */
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px; /* Espaciado desde la parte superior */
+    left: 20px; /* Espaciado desde la izquierda */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+    z-index: 1000; /* Asegura que la leyenda esté por encima del mapa */
+}
+
+.legend div {
+    margin-bottom: 5px; /* Espacio entre cada fila de la leyenda */
+}
+
+.legend span {
+    display: inline-block;
+    width: 20px; /* Ancho del color de la leyenda */
+    height: 20px; /* Alto del color de la leyenda */
+    margin-right: 5px; /* Espaciado a la derecha del color */
+    border-radius: 3px; /* Bordes redondeados */
+}
+.marker-normal {
+    background-color: orange; /* Color para voluntariado normal */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.marker-experience {
+    background-color: green; /* Color para voluntariado con experiencia */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
